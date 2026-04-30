@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fites Científiques dels Musulmans i Àrabs</title>
+  <meta name="description"
+    content="Descobreix les grans fites científiques dels musulmans i àrabs que van contribuir al desenvolupament de la matemàtica, la lògica i la informàtica moderna.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS extern -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════
+       POSICIONAMENT: STICKY  → NAV (queda fixat al scroll)
+  ════════════════════════════════════════════════ -->
+  <nav id="nav-principal">
+    <span class="nav-icon">☽</span>
+    <span class="nav-title">Fites Científiques dels Musulmans i Àrabs</span>
+    <span class="nav-icon">✦</span>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════
+       POSICIONAMENT: RELATIVE → hero (conté fills absoluts)
+  ════════════════════════════════════════════════ -->
+  <header id="hero">
+
+    <!-- POSICIONAMENT: ABSOLUTE → slogan dins del hero relative -->
+    <div id="slogan">
+      <span class="slogan-line1">El passat que va crear el futur</span>
+      <span class="slogan-line2">الماضي الذي صنع المستقبل</span>
+    </div>
+
+    <!-- POSICIONAMENT: ABSOLUTE → nau volant sobre el fons relative, z-index alt -->
+    <div id="scene">
+      <div id="nau-volant">
+        <img id="nau-volant-img" src="adr.png" alt="Nau volant decorativa">
+        <h3>HASSAN ADRAOU</h3>
+      </div>
+    </div>
+
+    <!-- POSICIONAMENT: ABSOLUTE → estrella superposta amb z-index -->
+    <div id="estrella-decorativa" aria-hidden="true">✦</div>
+
+
+    </div>
+
+    <!-- POSICIONAMENT: ABSOLUTE → segell decoratiu, z-index per sobre del fons -->
+    <div id="segell"></div>
+
+  </header>
+
+  <!-- ══════════════════════════════════════════════
+       CONTAINER principal: RELATIVE (context per a fills)
+  ════════════════════════════════════════════════ -->
+  <main id="container-principal">
+
+    <h1 id="titol-principal">Fites Científiques dels Musulmans i Àrabs</h1>
+    <p id="subtitol">Matemàtics, filòsofs i enginyers que van canviar la humanitat</p>
+
+    <!-- ─── GRID DE TARGETES (ordre cronològic: antic → recent) ─── -->
+    <div class="cards-container" id="cards-flex">
+
+      <!-- CARD 1 – Al-Khwarizmi (c. 780–850) -->
+      <article class="card" id="card-khwarizmi">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="al-khwarizmi.jpg" alt="Al-Khwarizmi">
+            <div class="card-front-label">Al-Khwarizmi</div>
+          </div>
+          <div class="card-back">
+            <div class="card-back-icon">🧮</div>
+            <h3>Al-Khwarizmi</h3>
+            <p class="card-pais">📍 Pèrsia · Segle IX</p>
+            <p class="card-dates">c. 780 – 850 dC</p>
+            <p class="card-bio">Pare de l'àlgebra i creador del concepte d'<strong>algorisme</strong>. Va treballar a la
+              Casa de la Saviesa de Bagdad i va revolucionar les matemàtiques.</p>
+            <span class="card-tag">Àlgebra · Algoritmes</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 2 – Al-Kindi (c. 801–873) -->
+      <article class="card" id="card-kindi">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="Al-Kindi.jpg" alt="Al-Kindi">
+            <div class="card-front-label">Al-Kindi</div>
+          </div>
+          <div class="card-back">
+            <div class="card-back-icon">🔐</div>
+            <h3>Al-Kindi</h3>
+            <p class="card-pais">📍 Iraq · Segle IX</p>
+            <p class="card-dates">c. 801 – 873 dC</p>
+            <p class="card-bio">Filòsof i matemàtic. Va desenvolupar l'<strong>anàlisi de freqüència</strong>, tècnica
+              fonamental en criptografia i seguretat informàtica.</p>
+            <span class="card-tag">Criptografia · Filosofia</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 3 – Abbas Ibn Firnas (810–887) -->
+      <article class="card" id="card-firnas">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="abbas.webp" alt="Abbas Ibn Firnas">
+            <div class="card-front-label">Abbas Ibn Firnas</div>
+          </div>
+          <div class="card-back">
+            <div class="card-back-icon">🪂</div>
+            <h3>Abbas Ibn Firnas</h3>
+            <p class="card-pais">📍 Al-Àndalus · Segle IX</p>
+            <p class="card-dates">810 – 887 dC</p>
+            <p class="card-bio">Inventor i enginyer andalusí. Pioner de l'<strong>aviació</strong> amb el seu cèlebre
+              vol planejat, i va desenvolupar dispositius mecànics innovadors.</p>
+            <span class="card-tag">Enginyeria · Aviació</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 4 – Thābit ibn Qurrah (826–901) -->
+      <article class="card" id="card-thabit">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="ibn thabit.jpg" alt="Thābit ibn Qurrah">
+            <div class="card-front-label">Thābit ibn Qurrah</div>
+          </div>
+          <div class="card-back">
+            <div class="card-back-icon">🔢</div>
+            <h3>Thābit ibn Qurrah</h3>
+            <p class="card-pais">📍 Iraq (Bagdad) · Segle IX</p>
+            <p class="card-dates">c. 826 – 901 dC</p>
+            <p class="card-bio">Matemàtic i astrònom. Va descobrir els <strong>nombres amics</strong>, va generalitzar
+              el teorema de Pitàgores i va reformar el sistema ptolemaic.</p>
+            <span class="card-tag">Àlgebra · Astronomia</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 5 – Al-Farabi (872–950) -->
+      <article class="card" id="card-farabi">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="img/al farabi.png" alt="Al-Farabi">
+            <div class="card-front-label">Al-Farabi</div>
+          </div>
+          <div class="card-back">
+            <div class="card-back-icon">📚</div>
+            <h3>Al-Farabi</h3>
+            <p class="card-pais">📍 Àsia Central · Segles IX–X</p>
+            <p class="card-dates">872 – 950 dC</p>
+            <p class="card-bio">Filòsof i científic. Va desenvolupar teories de la <strong>lògica i classificació del
+                coneixement</strong>, fonaments del pensament sistemàtic.</p>
+            <span class="card-tag">Lògica · Filosofia</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 6 – Muhammad Al-Karaji (c. 953–1029) -->
+      <article class="card" id="card-karaji">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="al karayi.webp" alt="Muhammad Al-Karaji">
+            <div class="card-front-label">Al-Karaji</div>
+          </div>
+          <div class="card-back">
+            <div class="card-back-icon">📊</div>
+            <h3>Muhammad Al-Karaji</h3>
+            <p class="card-pais">📍 Pèrsia · Segles X–XI</p>
+            <p class="card-dates">c. 953 – 1029 dC</p>
+            <p class="card-bio">Matemàtic i enginyer persa. Va ser el primer a utilitzar la <strong>demostració per
+                inducció</strong>, demostrant així el teorema del binomi.</p>
+            <span class="card-tag">Inducció · Àlgebra</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 7 – Ibn al-Haytham (965–1040) -->
+      <article class="card" id="card-haytham">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="IBN AL HAYTHAM.jpg" alt="Ibn al-Haytham">
+            <div class="card-front-label">Ibn al-Haytham</div>
+          </div>
+          <div class="card-back">
+            <div class="card-back-icon">🔭</div>
+            <h3>Ibn al-Haytham</h3>
+            <p class="card-pais">📍 Iraq / Egipte · Segles X–XI</p>
+            <p class="card-dates">965 – 1040 dC</p>
+            <p class="card-bio">Pioner del <strong>mètode científic experimental</strong>. Va revolucionar l'òptica i
+              l'estudi de la percepció visual.</p>
+            <span class="card-tag">Mètode Científic · Òptica</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 8 – Al-Biruni (973–1048) -->
+      <article class="card" id="card-biruni">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="Al-Biruni.jpg" alt="Al-Biruni">
+            <div class="card-front-label">Al-Biruni</div>
+          </div>
+          <div class="card-back">
+            <div class="card-back-icon">🌍</div>
+            <h3>Al-Biruni</h3>
+            <p class="card-pais">📍 Pèrsia (Uzbekistan) · Segles X–XI</p>
+            <p class="card-dates">973 – 1048 dC</p>
+            <p class="card-bio">Matemàtic i astrònom excepcional. Va fer <strong>avanços en càlcul i mesura
+                precisa</strong>, essencials per a la geodèsia moderna.</p>
+            <span class="card-tag">Càlcul · Geodèsia</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 9 – Ibn Sina (980–1037) -->
+      <article class="card" id="card-ibnsina">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="ibn sina.jpg" alt="Ibn Sina">
+            <div class="card-front-label">Ibn Sina</div>
+          </div>
+          <div class="card-back">
+            <div class="card-back-icon">🏥</div>
+            <h3>Ibn Sina (Avicenna)</h3>
+            <p class="card-pais">📍 Pèrsia · Segles X–XI</p>
+            <p class="card-dates">980 – 1037 dC</p>
+            <p class="card-bio">Metge i filòsof universal. Les seves contribucions a la <strong>lògica formal</strong>
+              van establir les bases del pensament computacional.</p>
+            <span class="card-tag">Lògica · Medicina</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 10 – Omar Khayyam (1048–1131) -->
+      <article class="card" id="card-khayyam">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="khayyam.jpg" alt="Omar Khayyam">
+            <div class="card-front-label">Omar Khayyam</div>
+          </div>
+          <div class="card-back">
+            <div class="card-back-icon">📐</div>
+            <h3>Omar Khayyam</h3>
+            <p class="card-pais">📍 Pèrsia · Segles XI–XII</p>
+            <p class="card-dates">1048 – 1131 dC</p>
+            <p class="card-bio">Matemàtic, astrònom i poeta. Va resoldre <strong>totes les equacions cúbiques</strong> i
+              va crear el calendari Jalali, encara en ús avui.</p>
+            <span class="card-tag">Matemàtiques · Astronomia</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 11 – Al-Jazari (1136–1206) -->
+      <article class="card" id="card-jazari">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="al jazari.png" alt="Al-Jazari">
+            <div class="card-front-label">Al-Jazari</div>
+          </div>
+          <div class="card-back">
+            <div class="card-back-icon">⚙️</div>
+            <h3>Al-Jazari</h3>
+            <p class="card-pais">📍 Mesopotàmia · Segles XII–XIII</p>
+            <p class="card-dates">1136 – 1206 dC</p>
+            <p class="card-bio">Enginyer i inventor. Va dissenyar <strong>màquines automàtiques i rellotges
+                programables</strong>, precursors directes de la computació.</p>
+            <span class="card-tag">Enginyeria · Automatisme</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 12 – Nasir al-Din Tusi (1201–1274) -->
+      <article class="card" id="card-tusi">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="tusi.jpg" alt="Nasir al-Din Tusi">
+            <div class="card-front-label">Al-Din Tusi</div>
+          </div>
+          <div class="card-back">
+            <div class="card-back-icon">🔺</div>
+            <h3>Nasir al-Din Tusi</h3>
+            <p class="card-pais">📍 Pèrsia · Segle XIII</p>
+            <p class="card-dates">1201 – 1274 dC</p>
+            <p class="card-bio">Pare de la <strong>trigonometria</strong> independent de l'astronomia. Va crear el
+              "parell de Tusi", mecanisme revolucionari.</p>
+            <span class="card-tag">Trigonometria · Astronomia</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 13 – Lotfi Zadeh (1921–2017) -->
+      <article class="card" id="card-zadeh">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="lotfi.jpg" alt="Lotfi Zadeh">
+            <div class="card-front-label">Lotfi Zadeh</div>
+          </div>
+          <div class="card-back">
+            <div class="card-back-icon">🤖</div>
+            <h3>Lotfi Zadeh</h3>
+            <p class="card-pais">📍 Azerbaidjan / Iran · Segles XX–XXI</p>
+            <p class="card-dates">1921 – 2017 dC</p>
+            <p class="card-bio">Creador de la <strong>lògica difusa (fuzzy logic)</strong>, pedra angular de la
+              intel·ligència artificial i la robòtica moderna.</p>
+            <span class="card-tag">IA · Lògica Difusa</span>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /cards-flex -->
+
+  </main><!-- /container-principal -->
+
+  <!-- ══════════════════════════════════════════════
+       POSICIONAMENT: FIXED → Footer (sempre visible al baix)
+  ════════════════════════════════════════════════ -->
+  <footer id="peu-pagina">
+    <span>© 2026 Fites Científiques dels Musulmans i Àrabs</span>
+    <span class="footer-sep">✦</span>
+    <span>الإنجازات العلمية للمسلمين والعرب</span>
+  </footer>
+
+</body>
+
+</html>
